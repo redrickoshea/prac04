@@ -5,9 +5,6 @@ import static java.lang.Math.abs;
 /**
  * A tool to help plan pedestrian journeys in a large city's
  * central business district which is laid out in a 10-block grid.
- * 
- * @author Colin Fidge
- * @version 1.0 (correct version)
  */
 public class JourneyPlanner {
 

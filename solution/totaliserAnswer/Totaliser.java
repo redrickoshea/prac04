@@ -2,9 +2,6 @@ package totaliserAnswer;
 
 /**
  * A class that maintains the sum of a given series of numbers.
- * 
- * @author Colin Fidge
- * @version 1.0 (correct version)
  *
  */
 public class Totaliser {

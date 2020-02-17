@@ -5,9 +5,6 @@ import java.lang.Exception;
 /**
  * A (stateless) class that provides a function for checking
  * whether all natural numbers in a given array are identical.
- * 
- * @author Colin Fidge
- * @version 1.0 (correct version)
  *
  */
 public class AllSame {

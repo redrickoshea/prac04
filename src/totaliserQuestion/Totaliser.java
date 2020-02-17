@@ -37,9 +37,6 @@ package totaliserQuestion;
  * A class that maintains the sum of a series of numbers.  (This
  * version has two distinct coding errors for you to find via
  * testing.)
- * 
- * @author Colin Fidge
- * @version 1.0 (buggy)
  *
  */
 public class Totaliser {
