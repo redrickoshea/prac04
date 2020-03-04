@@ -41,7 +41,7 @@ import java.lang.Exception;
  * to debug by inspection
  */
 
-public class AllSameA {
+public class AllSameA implements AllSame {
 
 	public boolean same(int[] naturals) throws Exception {
 		if (naturals.length == 0)

@@ -41,7 +41,7 @@ import java.lang.Exception;
  * to debug by inspection
  */
 
-public class AllSameB {
+public class AllSameB implements AllSame {
 
 	public boolean same(int[] naturals) throws Exception {
 		int first = naturals[0];
