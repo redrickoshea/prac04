@@ -35,9 +35,6 @@ implementations of the `AllSame` class in the package `allSameQuestion`: `AllSam
 
 **Hint:** In the three implementations there are (at least) three distinct errors in total.
 
-**Note:** Testing three different programs with one set of test cases is an unusual situation and is a little awkward, no matter how it's done. One approach is to, in your JUnit test class, manually edit which of the three programs is imported into the test class to change from one to the other. Another approach is to put each of the three programs in its own package and have a copy of the test case class in each one. (There is a much more elegant solution which works by creating a superclass for the three programs under test, but it is felt to be a little complex for this one-off exercise.)
-
-
 # Group Exercise: Test case brainstorming (JourneyPlanner example)
 
 This exercise will give you practice at devising black-box test cases for a complicated, stateful class.
