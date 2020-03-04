@@ -53,21 +53,19 @@ public class JourneyPlannerB {
 		else
 			throw new Exception("Walking speed must be positive");
 	}
-
-	public boolean setOrigin(int X, int Y) {
+	
+	public void setOrigin(int X, int Y) throws Exception {
 		if (0 <= X && X < 10 && 0 <= Y && Y < 10) {
 			originX = X; originY = Y;
-			return true;
 		} else
-			return false;
+			throw new Exception();
 	}
 
-	public boolean setDestination(int X, int Y) {
+	public void setDestination(int X, int Y) throws Exception {
 		if (0 <= X && X <= 10 && 0 <= Y && Y <= 10) {
 			destinationX = X; destinationY = Y;
-			return true;
 		} else
-			return false;
+			throw new Exception();
 	}
 
 	public int journeyTime() {
