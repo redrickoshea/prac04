@@ -93,21 +93,6 @@ Create a new package called `totaliserAnswers` and inside that create a new clas
 
 When you think your tests have identified the problems with the program examine the `Totaliser.java` source code file to confirm your suspicions. Then correct the errors in the code and rerun your tests to ensure that the problems have been fixed.
 
-# Group Exercise: Test case brainstorming (AllSame example)
-
-This exercise will give you practice at devising black-box test cases for a more complicated, but stateless, class.
-
-Read the API documentation for the `AllSame` class and, as a group, identify a sufficient set of tests for it. Note that the method provided by this class is a pure function, i.e., it does not update any fields within the class and thus has no 'memory' from one invocation to the next, which simplifies testing.
-
-# Individual Exercise: Testing with JUnit (AllSame example)
-
-This exercise will give you practice at using JUnit to test a complicated, stateless class.
-
-In the materials supplied for this practical session you will find three different
-implementations of the `AllSame` class in the package `allSameQuestion`: `AllSameA.java`, `AllSameB.java` and `AllSameC.java`. Develop a test class `AllSameTests.java` using the test cases identified in the previous exercise, your challenge is to identify which, if any, of these implementations is correct, and what the problems with the incorrect implementations are. Once again, use the API documentation above to see what AllSame's methods are and write test cases to test them. Look at the code only when you have completed the exercise, in order to confirm your findings.
-
-**Hint:** In the three implementations there are (at least) three distinct errors in total.
-
 # Group Exercise: Test case brainstorming (JourneyPlanner example)
 
 This exercise will give you practice at devising black-box test cases for a complicated, stateful class.
