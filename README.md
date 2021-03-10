@@ -3,15 +3,14 @@ This week's practical exercises aim to get you familiar with using exceptions, a
 
 This exercise illustrates a use case for exceptions and gives you experience in raising and handling exceptions.
 
-The below `BankAccount` class has been implemented correctly but it requires some exception handling.
+The below `BankAccount` class has been implemented correctly, but it requires some exception handling. A JUnit unit test class called `TestBankAccount` has been provided for your convenience.
 
-Copy and paste the code into new `BankAccount.java` file under the `bank` package.
+You will find the following code in the `BankAccount.java` file under the `bank` package:
 
 ```java
 package bank;
 
 public class BankAccount {
-
     private int funds;
 
     /**
@@ -58,8 +57,6 @@ public class BankAccount {
         b2.deposit(amount);
         System.out.printf("Transferred %d funds from b1 to b2. Account b1 has %d funds. Account b2 has %d funds.\n", amount, b1.getFunds(), b2.getFunds());
     }
-
-
 }
 ```
 
@@ -71,32 +68,10 @@ Add some exception handling to this class:
 
 
 
-Now try running `BankTester` and observe what happens. Try following the control flow using the debugger. The expected terminal output is shown below.
+Now try running the `TestBankAccount` unit test class and observe what happens. Try following the control flow using the debugger. The expected terminal output is shown below.
 
 
 Notice that control flow is **always** passed to the `finally` block before the method exits. This is particularly interesting in the last case where the `NullPointerException` is unhandled by the transfer method yet the `finally` block is executed prior to the exception propagation.
-
-```
-Test 1: No exceptions.
-Attempting transfer... Attempting withdraw... Withdrew 25 funds.
-Transferred 25 funds from b1 to b2. Account b1 has 75 funds. Account b2 has 25 funds.
-Cleanup transfer.
-
-Test 2: Exception thrown by withdraw.
-Attempting withdraw... Withdraw threw an exception. Exception is of class 'class bank.FundsException' with message 'Withdraw failed. This account has 75 in funds but 200 were requested.'
-
-Test 3: Transfer handles exception propagation from withdraw.
-Attempting transfer... Attempting withdraw... Cleanup transfer.
-Transfer threw an exception. Exception is of class 'class bank.TransferException' with message 'Transfer failed due to underlying exception: Withdraw failed. This account has 75 in funds but 200 were requested.'
-
-Test 4: Main does not handle an exception propagated by Transfer.
-Attempting transfer... Cleanup transfer.
-Exception in thread "main" java.lang.NullPointerException
-	at bank.BankAccount.transfer(BankAccount.java:51)
-	at bank.BankTester.main(BankTester.java:31)
-
-Process finished with exit code 1
-```
 
 # Group Exercise: Test case brainstorming (Totaliser example)
 
