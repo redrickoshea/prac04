@@ -85,7 +85,7 @@ This exercise will give you practice at using JUnit to test a simple class.
 
 In the materials supplied for this practical session you will find an implementation of the `Totaliser` class in the `totaliserQuestion` package. The purpose of the exercise is to test the supplied program as a black box, i.e., without looking at the source code. Instead use the API documentation above to see which methods Totaliser implements and write test cases to test them.
 
-Create a new package called `totaliserAnswers` and inside that create a new class called `TotaliserTest`. In this class, implement the various tests identified in the previous exercise. Use Week 3's lecture as a reference for creating new test classes. Note that you will need to import totaliserQuestion.Totaliser because it is in a different package. Once you get started, your code should look something like this:
+Create a new package called `totaliserAnswers` and inside that create a new class called `TotaliserTest`. In this class, implement the various tests identified in the previous exercise. Use Week 4's lecture as a reference for creating new test classes. Note that you will need to import totaliserQuestion.Totaliser because it is in a different package. Once you get started, your code should look something like this:
 
 ![Beginning of test class for Totaliser](imgs/testclass.png "Beginning of test class for Totaliser")
 
